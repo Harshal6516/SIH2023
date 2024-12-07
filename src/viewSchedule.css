@@ -1,0 +1,50 @@
+/* Container for the entire component */
+.conductor-list-container {
+    padding: 20px;
+    max-width: 1200px; /* Adjust based on your layout */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Style the input field */
+  .conductor-list-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  /* Style for the table */
+  .conductor-list-container table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders */
+    margin-bottom: 20px;
+  }
+  
+  .conductor-list-container th, .conductor-list-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .conductor-list-container th {
+    background-color: #f4f4f4; /* Header background color */
+    font-weight: bold;
+  }
+  
+  .conductor-list-container tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for even rows */
+  }
+  
+  .conductor-list-container tr:hover {
+    background-color: #f1f1f1; /* Hover effect */
+  }
+  
+  /* Style for "No records found" message */
+  .conductor-list-container p {
+    font-size: 18px;
+    color: #888;
+  }
+  

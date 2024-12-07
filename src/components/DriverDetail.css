@@ -1,0 +1,23 @@
+.driver-detail-container {
+    padding: 20px;
+}
+
+.driver-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.driver-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin-right: 10px;
+}

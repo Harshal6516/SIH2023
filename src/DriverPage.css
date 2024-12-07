@@ -1,0 +1,58 @@
+/* src/DriverPage.css */
+
+/* Container styling */
+.driver-page {
+    padding: 20px;
+}
+
+/* Header styling */
+.driver-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Search bar styling */
+.driver-page .search-bar {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Driver list styling */
+.driver-page .driver-list {
+    margin-top: 10px;
+}
+
+.driver-page .driver-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.driver-page .driver-list li {
+    margin: 10px 0;
+}
+
+.driver-page .driver-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.driver-page .driver-list a:hover {
+    text-decoration: underline;
+}
+
+/* Driver details section */
+.driver-page .driver-details {
+    margin-top: 20px;
+}
+
+.driver-page .driver-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Additional styling for buttons and other elements can be added here */

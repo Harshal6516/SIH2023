@@ -1,0 +1,28 @@
+/* src/components/RegionalManagerDashboard.css */
+
+.regional-manager-dashboard-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-placeholder {
+    border: 1px solid #ddd;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Ensure any overflow content is hidden */
+    position: relative; /* To position the image correctly */
+}
+
+.map-placeholder img {
+    position: absolute; /* Allows image to stretch and cover the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the image */
+    width: 100%; /* Ensure the image covers the width of the container */
+    height: 100%; /* Ensure the image covers the height of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}

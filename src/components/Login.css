@@ -1,0 +1,169 @@
+/* General styling for login */
+.login-container {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+
+  box-sizing: border-box;
+  text-align: left; /* Ensure everything is centered */
+  justify-content: center;
+  align-items: center;
+  display:block;
+  
+}
+
+/* Header styling */
+.login-container h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #07428a;
+  font-size: 26px;
+  font-weight: 750;
+  line-height: 1.2;
+
+}
+
+/* Role buttons container */
+.role-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap if needed */
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+/* Role button styling */
+.role-btn {
+  flex: 1 1 48%; /* Allow buttons to take up space and wrap */
+  padding: 12px;
+  background-color: #f0f2f5;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-align: center; /* Center text in button */
+}
+
+.role-btn.active {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  color: #ffffff;
+}
+
+.role-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #121212;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Style for input boxes */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #181717;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #d0dae6;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+    outline: none;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #357abd;
+    transform: scale(1.03);
+}
+
+/* Forgot password link */
+.forgot-password {
+  margin-bottom: 20px;
+  text-align: right;
+  
+}
+
+.forgot-password a {
+  color: #121213;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #fdfffc;
+}
+
+/* Sign up button */
+.sign-up {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sign-up button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-up button:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+.login-image {
+  width: 150px; /* Set the width to control the size of the circle */
+  height: 150px; /* Set the height to be equal to the width for a perfect circle */
+  max-height: none; /* Remove the max-height to prevent it from affecting the circle shape */
+  object-fit: cover; /* Ensure the image covers the container neatly */
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 20px;
+  display: block; /* Center the image if needed */
+  justify-content: center;
+  margin-left: 130px;
+}

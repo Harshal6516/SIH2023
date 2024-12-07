@@ -1,0 +1,18 @@
+/* src/components/MapComponent.css */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust height as needed */
+  width: 100%;
+  background-color: #d9e3f0; /* Optional background color */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.bus-image {
+  width: 1000px; /* Let width adjust automatically */
+  height: 100%; /* Adjust height to container */
+  max-width: none; /* Prevent max-width constraint */
+  border-radius: 8px;
+  object-fit: cover; /* Ensure aspect ratio is maintained */
+}

@@ -1,0 +1,300 @@
+/* General styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #adcbd1 0%, #002b5c 100%);
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sign Up button styling */
+.sign-up {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sign-up button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.sign-up button:hover {
+  background-color: #ff4f4f;
+  transform: scale(1.08);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #002b5c;
+  color: white;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1001;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .menu-toggle {
+  background-color: #4c4c4c;
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .menu-toggle:hover {
+  background-color: #333;
+  transform: scale(1.08);
+}
+
+/* Align the buttons to the right */
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-buttons button {
+  background-color: #1e88e5;
+  border: none;
+  color: white;
+  padding: 14px 22px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50px;
+  transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-buttons button:hover {
+  background-color: #005cb2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #002b5c;
+  color: white;
+  padding-top: 100px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar button {
+  display: block;
+  background-color: #003b73;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #005c99;
+}
+
+/* Sidebar dropdown styles */
+.sidebar .dropdown-menu {
+  margin-top: 10px;
+  padding-left: 20px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar .dropdown-menu button {
+  background-color: #e0e7f3;
+  color: #002b5c;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 4px 0;
+}
+
+.sidebar .dropdown-menu button:hover {
+  background-color: #c9d6e8;
+}
+
+/* Login styling */
+.login-container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+}
+
+.forgot-password {
+  text-align: right;
+}
+
+.forgot-password a {
+  color: #1e88e5;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Livetracking styles */
+.livetracking-container {
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.livetracking-container h2 {
+  color: #002b5c;
+  margin-bottom: 25px;
+}
+
+.dropdown-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.map-placeholder {
+  height: 320px;
+  background-color: #d9e3f0;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 320px;
+  border-radius: 8px;
+}
+
+/* Bus details styling */
+.bus-details-page {
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bus-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+.bus-details-table th,
+.bus-details-table td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: left;
+}
+
+.bus-details-table th {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.bus-details-table tr:nth-child(even) {
+  background-color: #f0f4f8;
+}
+
+.bus-details-table tr:hover {
+  background-color: #e0e7f3;
+}
+
+/* Employee management styles */
+.employee-management-page {
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.employee-management-buttons button {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.employee-management-buttons button:hover {
+  background-color: #ff4f4f;
+  transform: scale(1.05);
+}
+.dashboard-container {
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Bus image styling */
+.bus-image {
+  width: 100%; /* Adjust as needed */
+  max-width: 1500px; /* Adjust as needed */
+  height: 600px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space between image and map */
+  display: block; /* Ensures image is centered */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+

@@ -1,0 +1,67 @@
+        .personal-details-container {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            max-width: 80%;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .personal-details-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .personal-details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .personal-details-table th, .personal-details-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .personal-details-table th {
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .personal-details-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .personal-details-table tbody tr:hover {
+            background-color: #e9e9e9;
+            cursor: pointer;
+        }
+
+        .personal-details-table td {
+            color: #555;
+        }
+
+        .personal-details-container .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .personal-details-container button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .personal-details-container button:hover {
+            background-color: #45a049;
+        }
